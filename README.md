@@ -6,7 +6,7 @@ Descript's [Import Transcript][import_trans] feature.
 The output format conforms to [Descript's format][output_format]. We let Descript handle syncing.
 
 Unlike Descript's transcription of the mixed stream, Microsoft Teams's transcription is able to properly separate
-speakers, likely due to having proper access to separated auto mixes.
+speakers, likely due to having proper access to separated audio mixes.
 
 Team's built in transcription may not be as good but at least it won't let "yeahs" and "OKs" run into other speaker's
 "monologues".
