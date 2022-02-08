@@ -14,5 +14,5 @@ Team's built in transcription may not be as good but at least it won't let "yeah
 Importing this way also saves you the hassle of having to identify speakers. This is also probably due to Teams having
 access to name metadata.
 
-import_trans: https://help.descript.com/hc/en-us/articles/360042210632-Import-Transcript
-output_format: https://help.descript.com/hc/en-us/articles/360042639691
+[import_trans]: https://help.descript.com/hc/en-us/articles/360042210632-Import-Transcript
+[output_format]: https://help.descript.com/hc/en-us/articles/360042639691
