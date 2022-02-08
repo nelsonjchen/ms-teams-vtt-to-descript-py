@@ -1,4 +1,4 @@
-# (Microsoft Teams) VTT Transcript to Descript Import Helper
+# Microsoft Teams VTT Transcript to Descript Import Helper
 
 Export a transcript recorded in Microsoft Teams as VTT, run it through this simple program, copy paste its output to
 Descript's [Import Transcript][import_trans] feature.
