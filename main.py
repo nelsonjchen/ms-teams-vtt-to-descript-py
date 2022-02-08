@@ -4,6 +4,9 @@ import webvtt
 
 import re
 
+from gooey import Gooey, GooeyParser
+
+
 
 def process_vtt(path):
     for caption in webvtt.read(path):
@@ -14,8 +17,16 @@ def process_vtt(path):
         print(f"{speaker}: {caption.text}")
 
 
+@Gooey
+def main():
+    parser = GooeyParser(description="Microsoft VTT to Descript Transcript Helper")
+    parser.add_argument('filename', widget="FileChooser")
+    args = parser.parse_args()
+    if args:
+        process_vtt(parser.filename)
+
 # Press the green button in the gutter to run the script.
 if __name__ == '__main__':
-    process_vtt(sys.argv[1])
+    main()
 
 # See PyCharm help at https://www.jetbrains.com/help/pycharm/
