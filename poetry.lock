@@ -1,8 +1,31 @@
-package = []
+[[package]]
+name = "docopt"
+version = "0.6.2"
+description = "Pythonic argument parser, that will make you smile"
+category = "main"
+optional = false
+python-versions = "*"
+
+[[package]]
+name = "webvtt-py"
+version = "0.4.6"
+description = "WebVTT reader, writer and segmenter"
+category = "main"
+optional = false
+python-versions = ">=3.4"
+
+[package.dependencies]
+docopt = "*"
 
 [metadata]
 lock-version = "1.1"
 python-versions = "^3.10"
-content-hash = "17ca553b0bb9298a6ed528dd21e544ca433179192dba32a9920168e1c199d74f"
+content-hash = "de195f4705a211ed02e944f6fa465f5ed1aa5e41868e8d1f6859d37e5fe0e4af"
 
 [metadata.files]
+docopt = [
+    {file = "docopt-0.6.2.tar.gz", hash = "sha256:49b3a825280bd66b3aa83585ef59c4a8c82f2c8a522dbe754a8bc8d08c85c491"},
+]
+webvtt-py = [
+    {file = "webvtt_py-0.4.6-py3-none-any.whl", hash = "sha256:5cf9da2a8c34bc789db599377be87b228b7e4734c629597edd27a8054e004a57"},
+]

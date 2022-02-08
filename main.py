@@ -1,16 +1,21 @@
-# This is a sample Python script.
+import sys
 
-# Press ⇧F10 to execute it or replace it with your code.
-# Press Double ⇧ to search everywhere for classes, files, tool windows, actions, and settings.
+import webvtt
+
+import re
 
 
-def print_hi(name):
-    # Use a breakpoint in the code line below to debug your script.
-    print(f'Hi, {name}')  # Press ⌘F8 to toggle the breakpoint.
+def process_vtt(path):
+    for caption in webvtt.read(path):
+        speaker = "Unknown"
+        speaker_search = re.search('<v (.+?)>', caption.raw_text)
+        if speaker_search:
+            speaker = speaker_search[1]
+        print(f"{speaker}: {caption.text}")
 
 
 # Press the green button in the gutter to run the script.
 if __name__ == '__main__':
-    print_hi('PyCharm')
+    process_vtt(sys.argv[1])
 
 # See PyCharm help at https://www.jetbrains.com/help/pycharm/

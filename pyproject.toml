@@ -6,6 +6,7 @@ authors = ["Nelson Chen <crazysim@gmail.com>"]
 
 [tool.poetry.dependencies]
 python = "^3.10"
+webvtt-py = "^0.4.6"
 
 [tool.poetry.dev-dependencies]
 
